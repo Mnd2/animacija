@@ -43,6 +43,7 @@
         font-size: 24px;
       }
       #target {
+        border-radius: 10%;
         opacity: 0;
         transform: scale(0.5);
         top: -40px;
@@ -60,10 +61,12 @@
       .open:hover {
           background: silver;
           transform: rotate(1080deg);
-      }
+          box-shadow: 0.8em 0.1em 1.1em -0.1em blue;
+        }
       .close:hover {
           background: silver;
           transform: rotate(1080deg);
+          box-shadow: 0.8em 0.1em 1.1em -0.1em blue;
       }
       .emoji { 
         margin: 10px auto;
