@@ -24,6 +24,7 @@
         text-align: center;
         margin: 40px auto;
         transition: all 2s;
+        transform: all;
       }
       .open {
         background: linear-gradient(to right, #403b4a, #e7e9bb);
@@ -60,8 +61,9 @@
         }
       .close:hover {
         background: linear-gradient(to bottom, #403b4a, #e7e9bb);
-          transform: rotate(1080deg);
           box-shadow: 0.8em 0.1em 1.1em -0.1em blue;
+          transform: scale(0.5);
+          transition-delay: 0.2s;
       }
       .emoji { 
         margin: 10px auto;
