@@ -35,7 +35,8 @@
         font-size: 24px;
       }
       #target {
-        border-radius: 10%;
+        margin: 0 10px 10px 10px;
+        border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
         opacity: 0;
         transform: scale(0.5);
         top: -40px;
@@ -93,13 +94,26 @@
        .nose::after {
         content: '';
         position: absolute;
-        width: 25px;
-        height: 20px;
-        border-radius: 50%;
+        width: 50px;
+        height: 8px;
         background: #000;
-        left: 90px;
-        top: 90px;
+        left: 85px;
+        top: 100px;
+        transform: rotate(42deg);
+        animation-name: nose;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
        }
+       @keyframes nose {
+        0%   {width: 0px;height: 0px;}
+        5%   {width: 10px;height: 1px;}
+        10%  {width: 15px;height: 2px;}
+        25%  {width: 20px;height: 3px;}
+        35%  {width: 25px;height: 4px;}
+        50%  {width: 30px;height: 5px;}
+        75%  {width: 35px;height: 6px;}
+        100% {width: 40px;height: 7px;}
+      }
        .smile::after {
         content: '';
         position: absolute;
@@ -116,4 +130,5 @@
         }
        @keyframes smile {
         90% { transform: none; }   
-        95% { transform: scaleX(-0.1); }}
+        95% { transform: scaleX(-0.1);}
+      }
