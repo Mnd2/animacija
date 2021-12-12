@@ -45,6 +45,8 @@
         text-align: center;
         background: #464330;
         position: absolute;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: 1s;
       }
       #target:target {
         opacity: 1;
